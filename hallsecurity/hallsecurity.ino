@@ -96,7 +96,7 @@ void loop() {
     serialMsg+="\"mid\":\"";
     serialMsg+= millis();
     serialMsg+="\",\"amsg\":\"\"}";
-    
+   
   Serial.println(serialMsg);
   }
 
@@ -105,7 +105,7 @@ void loop() {
 
   boolean isMotionDetected(int val) {
     if ( val == HIGH ) {
-      //twoMinpreviousTime = millis();
+      //twoMinpreviousTime = millis();//
       return true;
     } else {
       return false;
